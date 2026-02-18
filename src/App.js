@@ -5,6 +5,10 @@ import Service from './components/Service';
 import About from './components/about/about';
 import ExoProps from './components/ExoProps';
 import Effect from './components/Effect';
+import EffectWithParams from './components/EffectWithParams';
+import Effect_with_clean_up_function from './components/EffectWithCleanupFct';
+
+
 
 function App() {
   return (
@@ -16,6 +20,9 @@ function App() {
       <About name="amina" age={20} />
       <ExoProps module1={12} module2={14} />
       <Effect />
+      
+      <EffectWithParams />
+      <Effect_with_clean_up_function />
     </div>
   );
 }
